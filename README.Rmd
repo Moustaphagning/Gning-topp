@@ -11,6 +11,12 @@ chunk_output_type: console
 ---
 ##Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
 
+```{r}
+knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)
+```
+
+
+
 
 ```{r}
 setwd("~/projet expertise/GNING/GNING_TOP")
