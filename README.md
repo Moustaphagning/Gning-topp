@@ -143,4 +143,4 @@ data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-## R Markdown
+
