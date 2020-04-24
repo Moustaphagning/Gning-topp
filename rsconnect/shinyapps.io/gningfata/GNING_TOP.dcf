@@ -1,0 +1,12 @@
+name: GNING_TOP
+title: GNING_TOP
+username:
+account: gningfata
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2179748
+bundleId: 3060406
+url: https://gningfata.shinyapps.io/GNING_TOP/
+when: 1587745382.24964
+asMultiple: FALSE
+asStatic: FALSE
