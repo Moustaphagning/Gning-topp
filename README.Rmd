@@ -1,6 +1,6 @@
 ---
 title: "readme"
-author: "Tapha"
+author: "Moustapha GNING && Mouhamad TOP"
 date: "24/04/2020"
 output: github_document
 
@@ -9,7 +9,7 @@ pdf_document: default
 editor_options:
 chunk_output_type: console
 ---
-
+##Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
 
 
 ```{r}
@@ -75,7 +75,7 @@ group_by(`annee`, `category`) %>%
 data_final<-merge(prop,moyenne, by=c("annee","category"), all=TRUE)
 data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 ```
-
+## Levolutiondu nombre total de campagne finance par categorie de BD (bande dessinee)
 
 ```{r}
 
@@ -96,8 +96,6 @@ data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 
 
 #Voici le lien pour notre application
-
-Moustapha gnig top mouhamad:
 
 https://gningfata.shinyapps.io/GNING_TOP/
  
