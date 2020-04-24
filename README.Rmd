@@ -92,6 +92,11 @@ data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
   plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "prop"],type = "l")
 ```
 
+# Lien de lapplication
+
+ https://gningfata.shinyapps.io/GNING_TOP/
+ 
+ 
 ## R Markdown
 
 
