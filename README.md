@@ -1,77 +1,23 @@
 readme
 ================
-Tapha
+Moustapha GNING && Mouhamad TOP
 24/04/2020
 
+\#\#Projets portant sur l’évolution des campagnes de financement
+participatif du site Ulule
+
 ``` r
-setwd("~/projet expertise/GNING/GNING_TOP")
+knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)
+```
+
+``` r
+setwd("~/projet expertise/GNING/GNING_TOP/Gning-topp")
 library(readr)
-```
-
-    ## Warning: package 'readr' was built under R version 3.6.3
-
-``` r
 library(dplyr)
-```
-
-    ## Warning: package 'dplyr' was built under R version 3.6.2
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-``` r
 library(ggplot2)
-```
-
-    ## Warning: package 'ggplot2' was built under R version 3.6.3
-
-``` r
 library(lubridate)
-```
-
-    ## 
-    ## Attaching package: 'lubridate'
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     date
-
-``` r
 data<-read_csv2("data_ulule_2019.csv")
 ```
-
-    ## Using ',' as decimal and '.' as grouping mark. Use read_delim() for more control.
-
-    ## Warning: Missing column names filled in: 'X1' [1]
-
-    ## Parsed with column specification:
-    ## cols(
-    ##   .default = col_character(),
-    ##   X1 = col_double(),
-    ##   amount_raised = col_double(),
-    ##   comments_count = col_double(),
-    ##   finished = col_logical(),
-    ##   goal = col_double(),
-    ##   is_cancelled = col_logical(),
-    ##   percent = col_double(),
-    ##   date_end = col_datetime(format = ""),
-    ##   date_start = col_datetime(format = ""),
-    ##   id = col_double(),
-    ##   goal_raised = col_logical(),
-    ##   finished.1 = col_logical(),
-    ##   news_count = col_double(),
-    ##   nb_days = col_double()
-    ## )
-
-    ## See spec(...) for full column specifications.
 
 ``` r
 data<-data[data$is_cancelled==FALSE,]
@@ -125,22 +71,28 @@ data_final<-merge(prop,moyenne, by=c("annee","category"), all=TRUE)
 data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 ```
 
+## Levolutiondu nombre total de campagne finance par categorie de BD (bande dessinee)
+
 ``` r
     plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "count"],type = "l")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
-
-``` r
-  plot(data_final[data_final$category=="Musique", "annee"], data_final[data_final$category=="Musique", "moyenne"],type = "l")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
-  plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "prop"],type = "l")
+  plot(data_final[data_final$category=="Musique", "annee"], data_final[data_final$category=="Musique", "moyenne"],type = "l")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
+``` r
+  plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "prop"],type = "l")
+```
 
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+\#Voici le lien pour notre application
+
+MOUSTAPHA et TOPs
+
+<https://gningfata.shinyapps.io/GNING_TOP/>

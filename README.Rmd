@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)
 
 
 ```{r}
-setwd("~/projet expertise/GNING/GNING_TOP")
+setwd("~/projet expertise/GNING/GNING_TOP/Gning-topp")
 library(readr)
 library(dplyr)
 library(ggplot2)
@@ -101,9 +101,9 @@ data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 
 
 
-#Voici le lien pour notre application
+#Voici le lien pour notre application 
 
-MOUSTAPHA
+MOUSTAPHA et TOPs
 
 https://gningfata.shinyapps.io/GNING_TOP/
  
