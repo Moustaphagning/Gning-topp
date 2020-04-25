@@ -10,7 +10,7 @@ editor_options:
 chunk_output_type: console
 ---
 ## Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
-Dans un premier temps nous allons proceder au chargement des packages et des données.Toutes les manipulation de données ont ete faite au sens tydiverse
+Dans un premier temps nous allons proceder au chargement des packages et des données. Toutes les manipulations de données ont ete faite au sens tydiverse
 
 ```{r}
 knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)

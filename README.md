@@ -6,7 +6,7 @@ Moustapha GNING && Mouhamad TOP
 ## Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
 
 Dans un premier temps nous allons proceder au chargement des packages et
-des données.Toutes les manipulation de données ont ete faite au sens
+des données. Toutes les manipulations de données ont ete faite au sens
 tydiverse
 
 ``` r
