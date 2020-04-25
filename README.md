@@ -3,8 +3,7 @@ readme
 Moustapha GNING && Mouhamad TOP
 24/04/2020
 
-\#\#Projets portant sur l’évolution des campagnes de financement
-participatif du site Ulule
+## Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
 
 ``` r
 knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)
