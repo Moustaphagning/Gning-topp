@@ -5,6 +5,10 @@ Moustapha GNING && Mouhamad TOP
 
 ## Projets portant sur l’évolution des campagnes de financement participatif du site Ulule
 
+Dans un premier temps nous allons proceder au chargement des packages et
+des données.Toutes les manipulation de données ont ete faite au sens
+tydiverse
+
 ``` r
 knitr::opts_chunk$set(echo = T, message=F, eval=T, warning = F)
 ```
@@ -70,7 +74,7 @@ data_final<-merge(prop,moyenne, by=c("annee","category"), all=TRUE)
 data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 ```
 
-## Levolutiondu nombre total de campagne finance par categorie de BD (bande dessinee)
+## L’évolution du nombre total de campagne financée par categorie de BD (bande dessinee)
 
 ``` r
     plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "count"],type = "l")
@@ -78,11 +82,15 @@ data_final <- merge(data_final,count,by=c("annee","category"), all=TRUE)
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
+## Evolution par annee de la moyenne des campagnes financées
+
 ``` r
   plot(data_final[data_final$category=="Musique", "annee"], data_final[data_final$category=="Musique", "moyenne"],type = "l")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+# Proportion des campagnes financées par annee
 
 ``` r
   plot(data_final[data_final$category=="BD", "annee"], data_final[data_final$category=="BD", "prop"],type = "l")
